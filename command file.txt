@@ -160,6 +160,7 @@ this command will show u difference between 2 files
   19        0.209 git log --oneline
   20        0.178 git log --oneline)
 
+
    2        0.002 cd C:\BankingProject\
    3        0.217 git log --oneline
    4        2.729 git push origin main
@@ -205,3 +206,41 @@ this command will show u difference between 2 files
   44        2.356 git push origin dev2
   45        0.075 git checkout dev1
   46        1.656 git push origin dev1
+
+
+
+////////////////////
+  git init
+    2  git branch
+    3  touch m1 m2 m3
+    4  git add .
+    5  git status
+    6  git commit -m "m1" m1
+    7  git commit -m "m2" m2
+    8  git commit -m "m3" m3
+    9  git log --oneline
+   10  git branch feature
+   11  git branch
+   12  git checkout feature
+   13  git branch
+   14  git log --oneline
+   15  ls
+   16  touch f1
+   17  git add .
+   18  git commit -m "f1"
+   19  git log --oneline
+   20  git checkout -
+   21  ls
+   22  touch m4
+   23  ls
+   24  git add .
+   25  git commit -m "m4"
+   26  git log --oneline
+   27  git checkout -
+   28  git merge master
+       git rebase master 
+   29  ls
+   30  ls
+   31  git log --oneline
+   32  history
+

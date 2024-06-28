@@ -1,0 +1,162 @@
+UNTRACKED FILE: empty file.
+
+git status : used to see the status of the file 
+
+stage area: u cannot tracked the file 
+
+git add . : will add all the file into the local repo
+
+without author name u cannot commit the file 
+
+.gitconfig file : it will having the config of the local repo like email or author name 
+
+git config --global user.name globalUser : this command is used to create new .gitconfig file
+
+git commit: it will give u the unique id of the file
+
+git commit -m " msge" filename:  it will write the msg into the file 
+
+git log: who have created the file and it will also give the date when it is created 
+
+git log --oneline: if u don't want to see all the details which was previously created by git log command.
+
+
+
+
+
+  --     -------- -----------
+   1        0.021 cd C:\BankingProject\
+   2        0.374 git init
+   3        0.092 git status
+   4        0.353 git add BAL.java
+   5        0.063 git status
+   6        0.070 git status
+   7        0.343 git add .
+   8        0.070 git status
+   9        0.356 git config --global user.name globaluser
+  10        0.074 git config --global user.email globaluser@gmail.com
+  11        0.068 git status
+  12        0.407 git commit -m "Blank BAL.java is added" BAL.java
+  13        0.064 history
+  14        0.411 git log
+  15        0.350 git config --local user.name localuser
+  16        0.398 git commit -m "PL.java and BAL.java files are added"
+  17        0.066 git status
+  18        0.148 git log
+  19        0.209 git log --oneline
+  20        0.178 git log --oneline
+  21        0.008 history
+  22        0.563 git log --oneline
+  23        0.364 git remote add origin https://github.com/onlineTrainingguy/BankingProject.git
+  24        0.161 git branch
+  25        0.086 git branch -M main
+  26        0.134 git branch
+  27        3.599 git push origin main
+  28        0.065 git status
+  29        0.064 git add .
+  30        0.064 git status
+  31        0.408 git commit -m "Bal.java v1"
+  32        2.434 git push origin main
+  33        0.628 get fetch
+  34        1.712 git fetch
+  35        0.132 git merge origin/main
+  36        1.704 git pull origin main
+  37        0.417 git log --oneline
+  38        0.184 git log --oneline
+  39        0.162 git diff 3fbc757 321f4ff
+  40        0.066 git status
+  41        0.066 git status
+  42        0.070 git status
+  43        0.019 history
+  44        0.067 git status
+  45        0.065 git add .
+  46        0.064 git status
+  47        1.878 git commit -m "web.xml is added"
+  48        0.333 git log --oneline
+  49        0.149 git log --oneline
+  50        0.086 git reset HEAD~1
+  51        0.145 git log --oneline
+  52        0.065 git status
+  53        0.063 git add .
+  54        0.125 git commit -m "testing soft rest option"
+  55        0.141 git log --oneline
+  56        0.085 git reset --soft HEAD~1
+  57        0.178 git log --oneline
+  58        0.064 git status
+  59        0.391 git commit -m "testing hard option"
+  60        0.095 git reset --hard HEAD~1
+  61        0.281 git log --oneline
+  62        0.064 git status
+  63        0.066 git add .
+  64        0.109 git commit -m "web.xml is added"
+  65        0.465 git log --oneline
+  66        0.070 git status
+  67        0.062 git add .
+  68        0.387 git commit -m "web.xml is modified"
+  69        0.067 git status
+  70        0.066 git status
+  71        0.145 git log --oneline
+  72     1:16.204 git revert 5c641dd
+  73        0.182 git log --oneline
+  74        6.961 git revert 25151bd
+
+
+
+
+  git init: 
+
+~ Used to create an empty folder called .git which is hidden(to see the files in .git follow the path on show-> hidden items) which will initialze an empty repo.
+
+~ If we delete .git folder then our local repo will be deleted.
+
+~ When we create files in our folder we will see U option next to our file names.
+
+~ U stands for untracked files.
+
+~ These are not pushed to our local repo as of yet.
+
+~ Stage Area: first inorder to commit these untracked files we need to move them to stage area which can be done using command git add filename
+
+~ If u run the command git status it will show u the files in staged area which are in green color and also the files which are untracked which are red in color.
+
+
+~ if u pushed an untracked file to stage area by mistake and want it to go back to untracked area u can run the command git rm --cached fileName 
+
+~ if u want to push all the  untracked files to stage area run the command git add . 
+
+~git log: If u want to see what commits u have done to the local repo u can run this command.
+
+The git log command in Git is used to display the commit history of a repository. When you run git log in your terminal or command prompt within a Git repository, it will typically output a list of commits in reverse chronological order (from the most recent to the oldest). Each commit displayed includes information such as:
+
+Commit Hash: A unique identifier for the commit (SHA-1 hash).
+Author: Name and email of the author who made the commit.
+Date and Time: When the commit was made.
+Commit Message: A brief description entered by the author summarizing the changes made in the commit.
+
+~ git log --oneline :This shows u commit in one line per file
+ull only see the message u have commited along with the code of the  file
+
+~ git diff codeFile1 codeFile2 
+this command will show u difference between 2 files
+
+(   1        0.021 cd C:\BankingProject\
+   2        0.374 git init
+   3        0.092 git status
+   4        0.353 git add BAL.java
+   5        0.063 git status
+   6        0.070 git status
+   7        0.343 git add .
+   8        0.070 git status
+   9        0.356 git config --global user.name globaluser
+  10        0.074 git config --global user.email globaluser@gmail.com
+  11        0.068 git status
+  12        0.407 git commit -m "Blank BAL.java is added" BAL.java
+  13        0.064 history
+  14        0.411 git log
+  15        0.350 git config --local user.name localuser
+  16        0.398 git commit -m "PL.java and BAL.java files are added"
+  17        0.066 git status
+  18        0.148 git log
+  19        0.209 git log --oneline
+  20        0.178 git log --oneline)
+

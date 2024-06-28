@@ -160,3 +160,48 @@ this command will show u difference between 2 files
   19        0.209 git log --oneline
   20        0.178 git log --oneline)
 
+   2        0.002 cd C:\BankingProject\
+   3        0.217 git log --oneline
+   4        2.729 git push origin main
+   5        0.153 git branch
+   6        0.098 git branch dev1
+   7        0.178 git branch
+   8        0.084 git branch -D dev1
+   9        0.124 git branch
+  10        0.059 git branch dev1
+  11        0.176 git branch
+  12        0.081 git branch dev2
+  13        0.139 git branch
+  14        2.588 git push origin dev1
+  15        2.406 git push origin dev2
+  16        0.422 git branch
+  17        0.084 git checkout dev1
+  18        0.142 git branch
+  19        1.557 git pull origin dev1
+  20        0.080 git checkout -
+  21        0.402 git merge dev1
+  22        0.087 git checkout dev2
+  23        1.526 git pull origin dev2
+  24        0.090 git checkout -
+  25       13.966 git merge dev2
+  26        0.461 git branch
+  27        2.479 git push origin main
+  28        0.073 git checkout dev1
+  29        0.402 git merge main
+  30        2.457 git push origin dev1
+  31        0.027 history
+  32        0.453 git branch
+  33        1.590 git pull origin dev1
+  34        0.062 ls
+  35        0.087 git checkout main
+  36        0.012 ls
+  37        0.110 git merge dev1
+  38        0.016 ls
+  39        2.512 git push origin main
+  40        0.072 git checkout dev1
+  41        0.062 git merge main
+  42        0.073 git checkout dev2
+  43        0.104 git merge main
+  44        2.356 git push origin dev2
+  45        0.075 git checkout dev1
+  46        1.656 git push origin dev1
